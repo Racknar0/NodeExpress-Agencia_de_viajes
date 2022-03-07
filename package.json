@@ -1,0 +1,18 @@
+{
+  "name": "01-agencia-viajes-node",
+  "version": "1.0.0",
+  "description": "Agencia viajes NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "type": "module",
+  "author": "Camilo Torres",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
