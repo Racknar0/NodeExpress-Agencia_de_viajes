@@ -6,21 +6,24 @@ block contenido
         div.row
 
 
-            h2.d-block.w-100.text-center Agrega un testimonial
+            div.col-md-12
+                h2.d-block.w-100.text-center Agrega un testimonial
 
-
+                if(errores)
+                    each error in errores
+                        div.alert.col.alert-danger.text-center= error.mensaje
 
             div.row.justify-content-center.col
                 div.col-md-8
                     form(action="/testimoniales", method="POST")
                         div.form-group
                             label(for="nombre") Nombre
-                            input#nombre(type="text", placeholder="Tu nombre", name="nombre", class="form-control")
+                            input#nombre(type="text", placeholder="Tu nombre", name="nombre", class="form-control", value= nombre)
                         div.form-group
                             label(for="correo") Correo Electronico
-                            input#correo(type="text", placeholder="Tu correo", name="correo", class="form-control")
+                            input#correo(type="text", placeholder="Tu correo", name="correo", class="form-control", value= correo)
                         div.form-group
                             label(for="mensaje") Mensaje
-                            textarea#mensaje(class="form-control", name="mensaje", placeholder="Tu mensaje", rows="3")
+                            textarea#mensaje(class="form-control", name="mensaje", placeholder="Tu mensaje", rows="3")= mensaje
 
                         input(class="btn btn-success btn-block" ,type="submit") 
