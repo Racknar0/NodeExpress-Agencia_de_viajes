@@ -3,4 +3,30 @@ extends ./layout/index
 block contenido
     main.container.mt-5
         div.row
-            h1 #{pagina}
+            div.col-md-5
+                img(src="img/nosotros.jpg", alt="imagen sobre nosotros", class="img-fluid")
+            div.col-md-7
+                h1 #{pagina}
+                blockquote Duis quis magna libero. Nam eget consectetur massa. Nunc eleifend et velit eu porta. Cras congue vitae mi quis aliquam. Pellentesque lobortis mi semper risus placerat rhoncus. Donec at velit id odio sollicitudin ornare. Morbi elementum urna in felis dictum, ut ornare magna aliquet. Phasellus risus ipsum, ultricies eget finibus viverra, elementum et nunc. Fusce in elit non magna tempor auctor.
+
+                p Donec ornare porttitor est, et efficitur massa finibus non. In ipsum dui, finibus ut finibus a, vehicula vitae ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur quis consequat eros. Pellentesque sed finibus erat.
+
+                p Etiam vitae tempor lorem. Vestibulum diam nunc, molestie quis vulputate eu, ullamcorper consectetur odio. Fusce posuere quis leo nec iaculis. Morbi ullamcorper ac mi nec sagittis. Phasellus sit amet mattis lorem, ut suscipit nulla. 
+
+    div.listado-iconos
+        div.container.mt-5.py-5.text-center
+            div.row
+                div.col-md-4
+                    img(src="img/icono_seguridad.svg", alt="icono seguridad" class="img-fluid mb-4")
+                    h2.mb-4 Seguridad
+                    p Vestibulum diam nunc, molestie quis vulputate eu, ullamcorper consectetur odio. Fusce posuere quis leo nec iaculis. Morbi ullamcorper ac mi nec sagittis. Phasellus sit
+                
+                div.col-md-4
+                    img(src="img/icono_destinos.svg", alt="icono destinos" class="img-fluid mb-4")
+                    h2.mb-4 Mejores Destinos
+                    p Vestibulum diam nunc, molestie quis vulputate eu, ullamcorper consectetur odio. Fusce posuere quis leo nec iaculis. Morbi ullamcorper ac mi nec sagittis. Phasellus sit
+                
+                div.col-md-4
+                    img(src="img/icono_precios.svg", alt="icono precios" class="img-fluid mb-4")
+                    h2.mb-4 Los mejores Precios
+                    p Vestibulum diam nunc, molestie quis vulputate eu, ullamcorper consectetur odio. Fusce posuere quis leo nec iaculis. Morbi ullamcorper ac mi nec sagittis. Phasellus sit
