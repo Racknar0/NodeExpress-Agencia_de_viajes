@@ -52,10 +52,6 @@ app.use('/', router)
 /** Puerto y Host para la App */ 
 
 
-
-/*  app.listen(port, () => {
-    console.log(`El servidor funciona en el puerto ${port}`);
-})  */
  app.listen(port, host, () => {
     console.log(`El servidor funciona en el puerto ${port}`);
 }) 
