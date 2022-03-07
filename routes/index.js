@@ -4,9 +4,12 @@ const router = express.Router();
 
 
 router.get('/', (req, res) => { // req - lo que enviamos : res - lo que express nos responde
-    res.send('Inicio')
+    res.render('inicio')
 });
-router.get('/nosotros', (req, res) => { // req - lo que enviamos : res - lo que express nos responde
+router.get('/nosotros', (req, res) => { 
+    
+    const viajes = 'Texto Nuevo'
+
     res.render('nosotros')
 });
 
